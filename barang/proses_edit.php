@@ -21,6 +21,11 @@ if(isset($_POST['submit'])) {
       $image_tmp = $_FILES['image']['tmp_name']; 
       $imgContent = addslashes(file_get_contents($image_tmp)); 
 
+      $target_dir = "./uploads/";
+      $target_file = $target_dir . basename($_FILES["image"]["name"]);
+      $uploadOk = true;
+      move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+
       $result = mysqli_query($conn, "UPDATE `barang` SET kode_barang='$kode_barang',nama_barang='$nama_barang',harga='$harga',keterangan='$keterangan',id_kategori='$id_kategori',id_merk='$id_merk',image='$imgContent' WHERE id='$id';");
       if($result) {
         $status = 'success'; 

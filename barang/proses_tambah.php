@@ -23,6 +23,11 @@ include_once ("../koneksi/koneksi.php");
         $image_tmp = $_FILES['image']['tmp_name']; 
         $imgContent = addslashes(file_get_contents($image_tmp));
 
+        $target_dir = "./uploads/";
+        $target_file = $target_dir . basename($_FILES["image"]["name"]);
+        $uploadOk = true;
+        move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+
         // Insert image content into database 
           $insert = $conn->query("INSERT INTO `barang`(`kode_barang`, `nama_barang` , `harga` , `keterangan` , `id_kategori` , `id_merk`, `image`) VALUES ('$kode_barang','$nama_barang','$harga','$keterangan','$id_kategori','$id_merk','$imgContent')");
           if($insert) {
