@@ -15,6 +15,14 @@ include 'koneksi/koneksi.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/e021723377.js" crossorigin="anonymous"></script>
+
+    <style>
+      .row .card:hover{
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+        transform: scale(1.02);
+      }
+    </style>
+
   </head>
 
   <body>
