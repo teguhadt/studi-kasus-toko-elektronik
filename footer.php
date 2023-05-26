@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/e021723377.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <footer class="bg-dark text-white mt-5 p-5 ">
+  <footer class="bg-dark text-white p-5 ">
       <div class="row" href="#">
         <div class="col-md-3">
           <h5>Layanan Pelanggan</h5>
