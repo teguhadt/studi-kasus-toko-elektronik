@@ -24,13 +24,13 @@
             </form>
 
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="index.php">Home</a>
+              <a class="nav-link active text-light" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="barang/index.php?halaman=home">Data</a>
+              <a class="nav-link active text-light" aria-current="page" href="barang/index.php?halaman=home"><i class="fas fa-server"></i> Data</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="about.php">About</a>
+              <a class="nav-link active text-light" aria-current="page" href="about.php"><i class="fa-solid fa-user"></i> About</a>
             </li>
           </ul>
           
